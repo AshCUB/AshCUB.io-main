@@ -1,0 +1,80 @@
+/* General styles - put these straight into your stylesheet */
+/* General page styles */
+body {
+  margin: 0;
+}
+
+html {
+  background-color: #ccc;
+  font-family: 'Comic Sans MS';
+  font-size: 10px;
+}
+/* General page styles */
+
+h2, p{
+  margin: 0;
+}
+
+.card header,.card footer{
+  height: 5em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.card footer{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+.card footer p{
+  font-size: 1.5em;
+  line-height: 2em;
+}
+/* Card container styles */
+.card{
+  background-color: rgb(0, 255, 225);
+  border: 0.2em solid rgb(56, 41, 41);
+  border-radius: 1.5em;
+  height: 22em;
+  margin: 5em auto;
+  width: 35em;
+}
+/* Card container styles */
+
+/* Card header styles */
+.card header{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+/* Card header styles */
+
+
+
+/* Card footer styles */
+
+/* Card footer styles */
+.card article{
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.457);
+  overflow: hidden;
+}
+
+.card article p{
+  padding: 1em;
+  line-height: 1.4em;
+  color: white;
+}
+
+h2{
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+
+
+/* Card image styles */
+.card article img{
+  float: right;
+  max-height: 100%;
+}
+/* Card image styles */
+

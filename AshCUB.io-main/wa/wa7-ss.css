@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #274c77;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: #507d9c;
+}
+
+h1{
+    color: #e7ecef;
+    font-family: "Comic Sans MS";
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Comic Sans MS";
+    color: #e7ecef;
+}
+
+#pics{
+    position: absolute;
+    width:30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    position: absolute;
+    left:35vw;
+    width:30vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#bluey1:hover{
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .5s ease-in-out;
+}
+
+#red-ball{
+    background-color: #e7ecef;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:20vw;
+    top:0;
+    animation-name: movin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes movin{
+    0%{
+        top:0;
+        left:0;
+    }
+    50%{
+        top:50vh;
+        left: 0vw;
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}

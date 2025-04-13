@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #flex-parent{ /* this is how you do flex */
+                display: flex;
+                flex-direction: column;
+                padding: 2vw;
+                border: 5px solid black;
+                background-color: chartreuse;
+            }
+
+            #box1 {
+                height: 300px;
+                width: 300px;
+                border: 2px;
+                border: 5px soild red;
+                background-color: blue;
+            }
+
+            #box2 {
+                height: 300px;
+                width: 300px;
+                background-color: red;
+                border: 5px soild blue;
+            }
+
+            @media screen and (width > 1200px)
+            {
+                #flex-parent{
+                    flex-direction: column;
+                    background-color: aquamarine;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id=flex-parent >
+            <div id="box1"></div>
+            <div id="box2"></div>
+        </div>
+    </body>
+    </html>

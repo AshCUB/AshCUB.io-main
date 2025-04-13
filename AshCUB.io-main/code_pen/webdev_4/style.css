@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FFFFF;
+}
+
+.content {
+	width: 90vmin;
+	height: 90vmin;
+	/*background: rgb(252, 239, 239);*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.content div {
+	/*background-color: #fff;*/
+	width: 14vmin;
+	height: 14vmin;
+	position: relative;
+}
+
+
+.letter-d {
+	background: 
+		radial-gradient(circle at 50% 50%, #ff00dd60 0 70%, #fff0 calc(70% + 1px) 100%), 
+		linear-gradient(90deg, #ff00dd60 0 50%, #fff0 0 100%);
+}
+
+.letter-e {
+	background: 
+		linear-gradient(90deg, #00a09860 0 75%, #fff0 0 100%),
+		linear-gradient(90deg, #00a09860 0 75%, #fff0 0 100%),
+		linear-gradient(90deg, #00a09860 0 50%, #fff0 0 100%),
+		linear-gradient(0deg, #00a09860 0 33%, #fff0 0 67%, #00a09860 0 100%);
+	background-size: 100% 34%, 100% 34%, 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 50%,0 50%, 0 0, 0 0;
+}
+
+
+.letter-h {
+	background: 
+		linear-gradient(90deg, #ff008c60 0 100%),
+		linear-gradient(0deg, #fff0 0 33%, #ff008c60 0 66%, #fff0 0 100%),
+		linear-gradient(90deg, #fff0 0 50%, #ff008c60 0 100%) ;
+}
+
+.letter-l {
+	background: 
+		linear-gradient(0deg, #00a09860 0 30%, #fff0 0 100%),
+		linear-gradient(90deg, #00a09860 0 45%, #fff0 0 100%) ;
+}
+
+
+.letter-o {
+	background: 
+		radial-gradient(circle at 50% 50%, #000cb960 0 100%),
+		linear-gradient(-45deg, #000cb960 0 50%, #fff0 0% 100%);
+	border-radius: 100%;
+}
+
+
+
+.letter-r {
+	background: 
+		radial-gradient(circle at 25% 50%, #abcc1d60 0 71%, #fff0 calc(71% + 1px) 100%),
+		linear-gradient(-90deg, #ffffff00 0 50%, #abcc1d60 0 100%),
+		conic-gradient(from 270deg at 50% 70%, #abcc1d60 0 25%, #fff0 0 100%),
+		conic-gradient(from 135deg at 50% 50%, #abcc1d60 0 25%, #fff0 0 100%);
+	background-repeat: no-repeat;
+	background-size: 50% 70%, 100% 100%, 100% 100%, 100% 100%;
+	background-position: 100% 0% , 0 0, 0 0, 0 0;
+}
+
+.letter-w {
+	background:  
+		conic-gradient(from -21deg at 36% 100%, #fff0 0 0.25%, #0066ff80 0.5% 11%, #fff0 11.25% 360deg),
+		conic-gradient(from -21deg at 64% 100%, #fff0 0 0.25%, #0066ff80 0.5% 11%, #fff0 11.25% 360deg);
+}
+
+
+
+
+
+.letter-ex {
+	background: 
+		radial-gradient(circle at 50% 84%, #abcc1d60 0 15%, #fff0 calc(15% + 1px) 100%),
+		linear-gradient(90deg, #fff0 0 33%, #abcc1d60 0 67%, #fff0 0 100%);
+	background-size:  100% 100%, 100% 82%;
+	background-repeat: no-repeat;
+	background-position:  0 0, 0 0;
+}

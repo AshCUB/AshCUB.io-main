@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        background-image: url("dog1_b4.png");
+        height: 200px;
+        width: 200px;
+    }
+    .box_2{
+        background-image: url("gold_fish.png");
+        height: 300px;
+        width: 200px;
+        object-fit: contain;
+    }
+
+</style>
+</head>
+<body>
+    <div class ="box"></div>
+    <div class ="box_2"></div>
+    <script>
+        let count = 0;
+        let count_2 = 0
+        console.log('sup');
+        let box = document.querySelector('.box');
+        let box_2 = document.querySelector('.box_2');
+        box.addEventListener('click', changeColor);
+        box_2.addEventListener('click', changelocation);
+        function changeColor(){
+            count++;
+            if (count%2){
+                box.style = "background-image: url('dog1_b4.png')";
+            }
+            else
+            {
+                box.style = "background-image: url('dog1_aftr.png')";
+            }
+        }
+        function changelocation(){
+            count_2++
+            if(count_2%2)
+            {
+                box_2.style.width = '500px';
+            } 
+            else{
+                box_2.style.width = '200px';
+            }
+            
+        }
+    </script>
+</body>
+</html>

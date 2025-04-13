@@ -1,0 +1,32 @@
+html {
+    font-size: 10px;
+}
+
+.fish, .quarter, .score{
+    position: absolute;
+    left: 0;
+    right: 0;
+      
+}
+
+.fish img,
+.score img,
+.quarter img
+{
+    height: 100vh;
+}
+
+.fish img{
+    position: absolute;
+    z-index: 0;
+}
+
+.score img{
+    position: absolute;
+    z-index: 1;
+}
+
+.quarter img{
+    position: absolute;
+    z-index: 2;
+}

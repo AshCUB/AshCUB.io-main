@@ -1,0 +1,16 @@
+body {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	min-height: 100vh;
+	background-color: lightblue;
+}
+.jump {
+	font-size: 3rem;
+	animation: jump 5s infinite;
+}
+@keyframes jump {
+	0% {
+		transform: translateX(1200px);
+	}
+}

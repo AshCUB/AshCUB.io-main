@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url(fonts/Neue-Haas-Grotesk-Display-Pro) format('truetype');
+}
+
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-weight:600;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+text{
+    color: rgba(0, 0, 0, 0.112);
+}
+
+.container{
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.VPC{
+    color: #FFFFFF;
+    display: flex;
+    font-weight:100; 
+    font-style: italic;
+    font-size: 20pt;
+    text-align: right;
+    font-size: 16pt;
+}
+
+
+.container .ZΩRBLAXIAN{
+    font-size: 9pt;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.C1{
+    background-color: #184e77;
+}
+
+.CONCERT_1 .PIC_BOX{
+    padding-left: 30px;
+}
+
+.CONCERT_1 .CONCERT_INFO, .CONCERT_1 .CONCERT_NAME, .CONCERT_1 .CONCERT_NUM{
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.CONCERT_1 .PIC_BOX{
+    color: #FFFFFF;
+    width: 100%;
+    text-align: right;
+
+}
+
+.CONCERT_2 .CONCERT_INFO, .CONCERT_2 .CONCERT_NAME, .CONCERT_2 .CONCERT_NUM, .CONCERT_2 .PIC_BOX{
+    color: #FFFFFF;
+    width: 100%;
+}
+
+
+.CONCERT_1{
+    background-color: #175381;
+}
+
+.CONCERT_2{
+    background-color: #1a759f;
+}
+
+.title{
+    background-color: #10324c;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.DCC{
+    display: flex;
+    position: relative;
+    color: #FFFFFF;
+    margin-left: auto;
+    font-size: 12pt;
+}
+
+.container .CONCERT_1, .container .CONCERT_2{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+
+
+
+.container .CONCERT_1 .CONCERT_NUM{
+    font-weight:normal; 
+    font-style: italic;
+    font-size: 10pt;
+}
+
+.container .CONCERT_2 .CONCERT_NUM{
+    font-weight:normal; 
+    font-style: italic;
+    font-size: 10pt;
+    text-align: right;
+}
+
+.container .CONCERT_1 .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+
+
+
+.container .CONCERT_1:hover .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
+@keyframes animatedText{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+
+}
+
+.container .CONCERT_2:hover .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    text-align: right;
+    background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
+
+.container .CONCERT_2 .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    text-align: right;
+}
+
+.container .CONCERT_1 .CONCERT_INFO{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.container .CONCERT_2 .CONCERT_INFO{
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+.container .CONCERT_1 .PIC_BOX, .container .CONCERT_2 .PIC_BOX{
+    flex:0 0 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+}
+
+.CONCERT_NAME,.CONCERT_INFO,.CONCERT_INFO{
+    width: 100%;
+}
+
+.container .CONCERT_2 .CONCERT_NAME{
+    margin-bottom: 5px;
+}
+
+.container .LEFT_INFO{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 400px){
+    .container .CONCERT_1, .container .CONCERT_2{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    }
+
+    .CONCERT_2 .CONCERT_NUM,
+    .CONCERT_2 .CONCERT_INFO {
+        text-align: left; 
+    }
+    
+    @media screen and (min-width: 1500px){
+        .container .CONCERT_1, .container .CONCERT_2{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+
+    
+        @media screen and (width <= 1000px) {
+            .container .CONCERT_1, .container .CONCERT_2{
+                flex-direction: column;
+            }
+            .PIC_BOX{
+                padding-top: 10px;
+
+            }
+            .container .CONCERT_2 .CONCERT_NUM,
+            .container .CONCERT_2 .CONCERT_NAME,
+            .container .CONCERT_2 .CONCERT_INFO {
+                text-align: left !important;
+            }
+        .container .LEFT_INFO{
+            order:-1
+        }
+
+        .container .ZΩRBLAXIAN{
+
+            text-align: left;
+            font-size: 9pt;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        @media screen and (width<=580px){
+            .VPC{
+                font-size: 4.2vw;
+            }
+    
+            .container .ZΩRBLAXIAN{
+    
+                text-align: left;
+                font-size: 2.2vw;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .DCC{
+                font-size: 2.2vw;
+            }
+            
+        }
+
+        .CONCERT_1 .PIC_BOX{
+            padding-left: 0px;
+        }
+
+        .CONCERT_1 .PIC_BOX{
+            color: #FFFFFF;
+            width: 100%;
+            text-align: left;
+        
+        }
+
+        .title{
+            background-color: #10324c;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        
+
+
+        .DCC{
+            padding-top: 1px;
+            display: flex;
+            position: relative;
+            color: #FFFFFF;
+            text-align: left;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        
+.container .CONCERT_2:hover .CONCERT_NAME{
+    margin-bottom: 5px;
+    font-weight:700;
+    font-style: normal;
+    background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
+.container .CONCERT_1:hover .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
+    }
+
+strong{
+    font-weight:700;
+}
+
